@@ -1,2 +1,2 @@
 # Frontend Homework
- - [Lesson2FE](https://miskaml.github.io/Frontend/Lesson2FE/index.html)
+ - [HomeworkTest](https://miskaml.github.io/Frontend/Lesson2FE/index.html)
