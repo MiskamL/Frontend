@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Flexbox</title>
+    <style>
+
+       .wrapper {
+            font-size: 3rem;
+            width: 600px;
+            height: 300px;
+            background: skyblue;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .left {
+            flex: 3;
+            background: red;
+        }
+
+        .right {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+
+        .right_2 {
+            background: coral;
+            height: 45%;
+        }
+
+        .right_bottom {
+            gap: 10px;
+            height: 55%;
+            display: flex;
+        }
+
+        .right_3 {
+            background: pink;
+            width: 40%;
+        }
+
+        .right_4 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 60%;
+        }
+
+        .right_4a {
+            background: blue;
+            height: 50%;
+        }
+
+        .right_4b {
+            background: yellow;
+            height: 50%
+        }
+
+        .left,
+        .right_2,
+        .right_3,
+        .right_4a,
+        .right_4b {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="left">
+            1
+        </div>
+
+        <div class="right">
+
+            <div class="right_2">
+                2
+            </div>
+
+            <div class="right_bottom">
+
+                <div class="right_3">
+                    3
+                </div>
+
+                <div class="right_4">
+
+                    <div class="right_4a">
+                        4a
+                    </div>
+
+                    <div class="right_4b">
+                        4b
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
