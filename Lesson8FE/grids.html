@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+      }
+
+      .header,
+      .aside,
+      .banner,
+      .main,
+      .footer {
+        background: gold;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 100px auto 50px;
+        grid-template-areas:
+          "aside header header"
+          "aside main banner"
+          "aside footer footer";
+        gap: 10px;
+      }
+
+      .header {
+        grid-area: header;
+      }
+
+      .aside {
+        grid-area: aside;
+      }
+
+      .banner {
+        grid-area: banner;
+      }
+
+      .main {
+        grid-area: main;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+
+      <aside class="aside"></aside>
+
+      <div class="banner"></div>
+
+      <main class="main"></main>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
