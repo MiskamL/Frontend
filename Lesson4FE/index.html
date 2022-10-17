@@ -373,8 +373,7 @@
 
       .transactions {
         display: flex;
-        width: 100%;
-        
+        width: calc(100% - var(--sidebar-width));
         height: 100%;
       }
 
@@ -392,6 +391,25 @@
         margin: 20px;
         padding: 20px;
         background: hsl(240deg 67% 98%);
+      }
+
+      .latest__header,
+      .upcoming__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .latest__uls {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+
+      .upcoming__uls {
+        display: flex;
+        justify-content: space-between;
       }
     /* Bottom section end */
 
@@ -622,11 +640,104 @@
     
               <div class="transactions">
     
-                <nav class="latest">latest</nav>
-                <nav class="upcoming">upcoming</nav>
-    
+                <nav class="latest">
+                  <header class="latest__header">
+                    <h3>Latest Transactions</h3>
+                    <div>
+                      <i class="las la-search"></i>
+                      <i class="las la-filter"></i>
+                    </div>                   
+                  </header>
+                  <nav class="latest__uls">
+                    <div class="latest__firstul">
+                      <ul>
+                        <li>
+                          <h2>Payment Sent to Maksym</h2>
+                        </li>
+                        <li>
+                          <h2>Salary from Redwhale</h2>
+                        </li>
+                        <li>
+                          <h2>Money Sent to Wise.com</h2>
+                        </li>
+                        <li>
+                          <p>Mon, Mar 1</p> 
+                        </li>
+                        <li>
+                          <h2>Purchased Macbook Pro</h2>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="latest__secondul">
+                      <ul>
+                        <li>
+                          <h2>$560.00</h2>
+                        </li>
+                        <li>
+                          <h2>$12,200.00</h2>
+                        </li>
+                        <li>
+                          <h2>$3,000.00</h2>
+                        </li>
+                        <li>
+                         <p>--------------</p> 
+                        </li>
+                        <li>
+                          <h2>$5,560.00</h2>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </nav>
+                <nav class="upcoming">
+                  <header class="upcoming__header">
+                    <h3>Upcoming Transactions</h3>
+                    <div>
+                      <h5>View All</h5>
+                    </div>                   
+                  </header>
+                  <nav class="upcoming__uls">
+                    <div class="upcoming__firstul">
+                      <ul>
+                        <li>
+                          <h3>Payment Sent to Maksym</h3>
+                        </li>
+                        <li>
+                          <h3>Salary from Redwhale</h3>
+                        </li>
+                        <li>
+                          <h3>Money Sent to Wise.com</h3>
+                        </li>
+                        <li>
+                          <p>Mon, Mar 1</p> 
+                        </li>
+                        <li>
+                          <h3>Purchased Macbook Pro</h3>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="upcoming__secondul">
+                      <ul>
+                        <li>
+                          <h3>$560.00</h3>
+                        </li>
+                        <li>
+                          <h3>$12,200.00</h3>
+                        </li>
+                        <li>
+                          <h3>$3,000.00</h3>
+                        </li>
+                        <li>
+                          <p>--------------</p> 
+                        </li>
+                        <li>
+                          <h3>$5,560.00</h3>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
               </div>
-
+            </nav>
         </section>
     <!-- Bottom section end -->
     </main>
