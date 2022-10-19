@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+                                "aside header header a"
+                                "aside b c banner"
+                                "aside d f banner"
+            ;
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background: green;
+        }
+
+        .aside {
+            grid-area: aside;
+            background: green;
+        }
+
+        .banner {
+            grid-area: banner;
+            background: green;
+        }
+
+        .a {
+            grid-area: a;
+            background: red;
+        }
+
+        .b {
+            grid-area: b;
+            background: orange;
+        }
+
+        .c {
+            grid-area: c;
+            background: red;
+        }
+
+        .d {
+            grid-area: d;
+            background: red;
+        }
+
+        .f {
+            grid-area: f;
+            background: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+      <header class="header"></header>
+
+      <aside class="aside"></aside>
+
+      <div class="banner"></div>
+    
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+      <div class="f"></div>
+</body>
+</html>
