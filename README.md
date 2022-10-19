@@ -5,5 +5,6 @@
  - [Homework3sep26](https://miskaml.github.io/Frontend/Lesson3FE/homeWorkLesson3sep26.html)
  - [Homework4sep28](https://miskaml.github.io/Frontend/Lesson4FE/index.html)
  - [Lesson5oct05](https://miskaml.github.io/Frontend/Lesson5FE/index.html)
- - [Lesson8oct017](https://miskaml.github.io/Frontend/Lesson8FE/grids.html)
+ - [Lesson8oct17](https://miskaml.github.io/Frontend/Lesson8FE/grids.html)
  - [Homework5oct17](https://miskaml.github.io/Frontend/Lesson8FE/homeWork5oct17.html)
+ - [Lesson9oct19](https://miskaml.github.io/Frontend/Lesson9FE/index.html)

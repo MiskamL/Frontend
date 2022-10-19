@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                    "aside header header a"
+                    "aside b c banner"
+                    "aside main main banner"
+                    "footer footer footer banner"
+            ;
+            gap: 5px;
+        }
+
+        .header {
+            grid-area: header;
+            background: purple;
+        }
+
+        .aside {
+            grid-area: aside;
+            background: purple;
+        }
+
+        .banner {
+            grid-area: banner;
+            background: purple;
+        }
+
+        .main {
+            grid-area: main;
+            background: purple;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: purple;
+        }
+
+        .a {
+            grid-area: a;
+            background: purple;
+        }
+
+        .b {
+            grid-area: b;
+            background: purple;
+        }
+
+        .c {
+            grid-area: c;
+            background: purple;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header class="header"></header>
+  
+        <aside class="aside"></aside>
+  
+        <div class="banner"></div>
+      
+        <div class="a"></div>
+
+        <div class="b"></div>
+
+        <div class="c"></div>
+
+        <main class="main"></main>
+
+        <footer class="footer"></footer>
+    
+</body>
+</html>
