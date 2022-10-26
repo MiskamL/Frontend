@@ -7,6 +7,11 @@
     <title>Bensinon</title>
 
     <style>
+      :root {
+        --sidebar-width: 250px;
+        --color-main: grin;
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -22,12 +27,12 @@
       .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 80px 2fr 1fr;
         gap: 5px;
         grid-template-areas:
           "header header header"
           "main main main"
-          "footer footer footer";
+          "content content content";
       }
 
       .sidebar {
@@ -36,18 +41,30 @@
 
       .header {
         grid-area: header;
-        background: gold
+        background: gold;
       }
 
       .main {
         grid-area: main;
-        background: gold
+        background: gold;
       }
 
-      .footer {
-        grid-area: footer;
-        background: gold
+      .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: content;
+        background: gold;
       }
+
+      .orders,
+      .delivery,
+      .payments {
+        width: 250px;
+        height: 150px;
+        background: green;
+      }
+
     </style>
   </head>
   <body>
@@ -58,7 +75,11 @@
 
       <main class="main"></main>
 
-      <footer class="footer"></footer>
+      <section class="content">
+        <title class="orders"></title>
+        <title class="delivery"></title>
+        <title class="payments"></title>
+      </section>
     </div>
   </body>
 </html>
