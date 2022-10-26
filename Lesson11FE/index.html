@@ -9,7 +9,7 @@
     <style>
       :root {
         --sidebar-width: 250px;
-        --color-main: grin;
+        --color-main: green;
       }
 
       * {
@@ -40,8 +40,22 @@
       }
 
       .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 20px;
         grid-area: header;
         background: gold;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      a {
+        margin: 10px;
       }
 
       .main {
@@ -51,7 +65,7 @@
 
       .content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         grid-area: content;
         background: gold;
@@ -60,9 +74,12 @@
       .orders,
       .delivery,
       .payments {
-        width: 250px;
-        height: 150px;
+        flex: 1;
+        height: 100%;
+        margin: 20px;
+        border-radius: 10%;
         background: green;
+
       }
 
     </style>
@@ -71,14 +88,31 @@
     <div class="wrapper">
       <aside class="sidebar"></aside>
 
-      <header class="header"></header>
+      <header class="header">
+        <div class="logo">
+            <h3>bensinon</h3>
+        </div>
+        <nav class="links">
+
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+
+            <button class="getStarted">Get Started</button>
+
+        </nav>
+        
+      </header>
 
       <main class="main"></main>
 
       <section class="content">
-        <title class="orders"></title>
-        <title class="delivery"></title>
-        <title class="payments"></title>
+        <div class="orders"></div>
+        <div class="delivery"></div>
+        <div class="payments"></div>
       </section>
     </div>
   </body>
