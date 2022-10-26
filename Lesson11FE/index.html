@@ -77,11 +77,15 @@
         flex: 1;
         height: 100%;
         margin: 20px;
-        border-radius: 10%;
+        border-radius: 20%;
         background: green;
-
       }
 
+      @media (max-width: 768px) {
+        a {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -90,21 +94,18 @@
 
       <header class="header">
         <div class="logo">
-            <h3>bensinon</h3>
+          <h3>bensinon</h3>
         </div>
         <nav class="links">
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
 
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-
-            <button class="getStarted">Get Started</button>
-
+          <button class="getStarted">Get Started</button>
         </nav>
-        
       </header>
 
       <main class="main"></main>
