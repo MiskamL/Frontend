@@ -66,6 +66,10 @@
         background: gold;
       }
 
+      .mainImgMobile {
+        display: none;
+      }
+
       .content {
         display: flex;
         justify-content: space-evenly;
@@ -87,6 +91,14 @@
       @media (max-width: 768px) {
         a {
           display: none;
+        }
+
+        .mainImg {
+          display: none;
+        }
+
+        .mainImgMobile {
+            display: inline;
         }
       }
     </style>
@@ -113,25 +125,26 @@
 
       <main class="main">
         <div class="info">
-            <div>
-                <h1>Refuling a car at your address</h1>
-            </div>
-            <div>
-                <a href="">delivery service</a>
-            </div>
-            <div class="butons">
-                <button>rgfsfsv</button>
-                <button>vrsevsd</button>
-            </div>
-            <div>
-                
-            </div>
-
-
+          <div>
+            <h1>Refuling a car at your address</h1>
+          </div>
+          <div>
+            <a href="">delivery service</a>
+            <img
+              class="mainImgMobile"
+              src="https://via.placeholder.com/150"
+              alt=""
+            />
+          </div>
+          <div class="butons">
+            <button>rgfsfsv</button>
+            <button>vrsevsd</button>
+          </div>
+          <div></div>
         </div>
 
         <figure class="mainImg">
-            <img src="https://via.placeholder.com/250" alt="">
+          <img src="https://via.placeholder.com/250" alt="" />
         </figure>
       </main>
 
